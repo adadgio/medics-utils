@@ -1,0 +1,31 @@
+{
+  "name": "@medics/utils",
+  "version": "1.0.0",
+  "description": "Skeleton project to create 360medics scoped NPM packages",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "Romain BRUCKERT <romain@360medics.com>",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "tslint --project \"./tsconfig.json\"",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "commit": "git add -A && git commit -m \"Npm pre-publish commit\"",
+    "publish:updates": "npm run commit && npm version minor && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adadgio/medics-utils"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
+  }
+}
