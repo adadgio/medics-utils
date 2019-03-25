@@ -1,6 +1,6 @@
 {
   "name": "@medics/utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Skeleton project to create 360medics scoped NPM packages",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
