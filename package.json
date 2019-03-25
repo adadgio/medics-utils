@@ -11,7 +11,7 @@
     "lint": "tslint --project \"./tsconfig.json\"",
     "test": "mocha -r ts-node/register test/**/*.spec.ts",
     "commit": "git add -A && git commit -m \"Npm pre-publish commit\"",
-    "publish:updates": "npm run commit && npm version minor && npm publish --access public"
+    "publish:updates": "npm run build && npm run commit && npm version minor && npm publish --access public"
   },
   "repository": {
     "type": "git",
